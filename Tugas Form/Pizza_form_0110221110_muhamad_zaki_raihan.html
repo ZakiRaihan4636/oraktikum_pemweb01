@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pizza Form - Muhamad Zaki Raihan</title>
+</head>
+<body>
+	<h1>Blackstone Bistro | Pizza-on-Demand</h1>
+	<p>Our 12" wood-fired pizzas are avaiable for delivery. Build your </p>
+	<p>custom pizza and we'll deliver it within an hour.</p>
+	<br>
+	<form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
+	<fieldset>
+		<legend>Your Information</legend>
+		<label for="name">Name :</label>
+		<input type="text" name="name"><br><br>
+		<label for="address">Address :</label>
+		<input type="text" name="address"><br><br>
+		<label for="telephonenumber">Telephone number</label>
+		<input type="tel" name="telephone"><br><br>
+		<label for="email">Email :</label>
+		<input type="email" name="email"><br><br>
+		<label for="">Delivery Intrukctions :</label><br><br>
+		<textarea name="instructions" rows="4" cols="50" maxlength="400" placeholder="No more than 400 characters long"></textarea>
+	</fieldset>
+	
+	<h2>Design Your dream pizza :</h2>
+	<p>Pizza Specs</p>
+	<fieldset>
+		<legend>Crust(Choose one) :</legend>
+		<input type="radio" name="crust" value="Classic White">
+		<label>Classic white</label><br>
+		<input type="radio" name="crust" value="Mutligrain">
+		<label>Multigarin</label><br>
+		<input type="radio" name="crust" value="Chesse-stuffed">
+		<label>Cheese stuffed</label><br>
+		<input type="radio" name="crust" value="Gluten-free">
+		<label>Gluten free</label><br>
+
+		</fieldset>
+		
+	</fieldset>
+
+	<fieldset>
+		<legend>Toppings (Choose as many as you want :</legend>
+		<input type="checkbox" name="toppings[]" value="red sauce">
+		<label>Red Sauce</label><br>
+		<input type="checkbox" name="toppings[]" value="White sauce" >
+		<label>White sauce</label><br>
+		<input type="checkbox" name="toppings[]" value="Mozzareella Cheese">
+		<label>Mozzarella Cheese</label><br>
+		<input type="checkbox" name="toppings[]" value="Pepperoni">
+		<label>Pepperoni</label><br>
+		<input type="checkbox" name="toppings[]" value="Mushrooms">
+		<label>Mushrooms</label><br>
+		<input type="checkbox" name="toppings[]" value="Anchovies">
+		<label>Anchovies</label><br><br>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Number</legend>
+		<label>How many pizza :</label>
+		<select name="pizzas">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</select><br><br>
+	</fieldset><br>
+		
+	<input type="submit" value="Bring me a pizza">
+	<input type="reset">
+</form>
+</body>
+</html>
