@@ -1,0 +1,135 @@
+body{
+    background-color: whitesmoke;
+}
+.all{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    outline: 1px solid;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+}
+.container{
+    width: 100%;
+    height: 370px;
+    margin: auto;
+}
+.hedkanan{
+    width: 300px;
+    height: 300px;
+    margin-top: 35px;
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+.hedkiri{
+    width: 200px;
+    height: 200px;
+    margin-top: 45px;
+    float: left;
+    margin-left: 40px;
+}
+#gambar_profile{
+    width: 200px;
+
+}
+.hedtengah{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 55px;
+    line-height: 30px;
+}
+.content{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin: auto;
+    margin-top: 0px;
+}
+.article{
+    width: 96%;
+    height: 150px;
+    margin: auto;
+    line-height: 25px;
+    outline: 1px border;
+    background-color: white;
+}
+.multimedia{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+.video_multimedia{
+    width: 30%;
+    height: 250px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    outline: 1px solid;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+.gambar_multimedia{
+    width: 30%;
+    height: 250px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 25px;
+    outline: 1px solid;
+}
+.kanan_atas{
+    width: 110px;
+    height: 100px;
+    background-color: white;
+    margin-top: 10px;
+    float: right;
+    margin-right: 30px;
+}
+.kiri_atas{
+    width: 110px;
+    height: 100px;
+    background-color: white;
+    margin-top: 10px;
+    float: left;
+    margin-left: 30px;
+}
+.kanan_bawah{
+    width: 110px;
+    height: 100px;
+    background-color: white;
+    margin-top: 20px;
+    float: right;
+    margin-right: 30px;
+}
+.kiri_bawah{
+    width: 110px;
+    height: 100px;
+    background-color: white;
+    margin-top: 20px;
+    float: left;
+    margin-left: 30px;
+}
+.multimedia_kanan{
+    width: 30%;
+    height: 250px;
+    background-color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    outline: 1px solid;
+    line-height: 30px;
+}
+img{
+    width: 100px;
+}
