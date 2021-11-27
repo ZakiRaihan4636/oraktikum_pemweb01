@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.3 - Muhamad Zaki Raihan</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: pink;
+            display: flex;
+            min-height: 97vh;
+            flex-direction: column;
+            font-size: 30px;
+            font-family: arial;
+        }
+        header{
+            display: flex;
+            background: lightblue;
+            height: 15vh;
+            color: white;
+            justify-content: center;
+            align-items: center;
+
+        }
+        footer{
+            display: flex;
+            background: lightblue;
+            height: 15vh;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background: pink;
+            flex: 1;
+            margin-top: 20px;
+
+        }
+        .item{
+            margin-right: 20px;
+            
+        }
+        .item3{
+            display: flex;
+            background-color: cadetblue;
+            flex: 1;
+            order: 0;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+
+        }
+        .container2{
+            display: flex;
+            background-color: lightcoral;
+            flex: 3;
+            order: 0;
+            justify-content: end;
+            color: white;
+            flex-direction: column;
+        }
+        .img{
+            display: flex;
+            width: 300px;
+            background: lightgrey;
+            height: 155px;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <div class="container">
+        <div class="item item3">Aside</div>
+        <div class="container2">
+           <div class="box article">Article</div>
+           <div class="box image">
+            <div class="box img">Image</div>
+            <div class="box img">Image</div>
+            <div class="box img">Image</div>
+           </div>
+           
+        </div>       
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
