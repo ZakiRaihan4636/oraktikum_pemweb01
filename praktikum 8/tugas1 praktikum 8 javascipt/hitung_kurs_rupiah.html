@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Hitung kurs rupiah</legend>
+        <table>
+            <tr>
+                <th>Masukan Nilai</th>
+                <th>Mata Uang</th>
+                <th>Hasil Rupiah</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="nilai" onchange="kurs()"></td>
+                <td><input type="text" id="jenis" placeholder="sadas" value="Dollar US"></td>
+                <td><input type="text" id="hasil"></td>
+            </tr>
+        </table>
+    </fieldset>
+    
+  
+</body>
+<script>
+    function kurs(){
+        if(jenis.value == "Dollar US"){
+            let input = Number(document.getElementById("nilai").value);
+            let hitung = input * 14950;
+            document.getElementById("hasil").value = "Rp. " +hitung
+            
+        }
+
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Menghitung luas dan keliling lingkaran</legend>
+        <table>
+            <tr>
+                <th>Masukan Jari Jari</th>
+                <th>luas lingkaran</th>
+                <th>Keliling Lingkaran</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="jari_jari" onchange="hitung()"></td>
+                <td><input type="text" id="hasil"> </td>
+                <td><input type="text" id="hasil2"></td>
+            </tr>
+        </table>
+     
+    </fieldset>
+   <script>
+
+       function hitung(){
+           let r = Number(document.getElementById("jari_jari").value);
+           let phi = 22/7
+           let luas = phi*r*r
+           let keliling = 2*phi*r
+
+           document.getElementById("hasil").value= luas;
+           document.getElementById("hasil2").value= keliling;
+       }
+   </script>
+</body>
+</html>

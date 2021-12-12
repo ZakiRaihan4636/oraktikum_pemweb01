@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Hitung Biaya Parkir</legend>
+        <table>
+            <tr>
+                <th>Jam Masuk</th>
+                <th>Jam Keluar</th>
+                <th>Lama</th>
+                <th>Keluaran Biaya</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="masuk" ></td>
+                <td> <input type="text" id="keluar" onchange="biayaParkir()"></td>
+                <td><input type="text" id="jam"></td>
+                <td><input type="text"  id="biaya"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <script>
+        function biayaParkir(){
+            let masuk = Number(document.getElementById("masuk").value);
+            let keluar = Number(document.getElementById("keluar").value);
+            let lama = keluar - masuk
+            let biaya = 3000
+            document.getElementById("jam").value= lama +" jam ";
+
+            if(lama == 2){
+                let dua_jam_pertama = biaya
+                document.getElementById("biaya").value="Rp. " +dua_jam_pertama ;
+            }else if(lama >= 2){
+                let jam_selanjutnya = (lama - 2)*1000+biaya
+                document.getElementById("biaya").value="Rp. " +jam_selanjutnya ;
+            }else{
+                document.getElementById("biaya").value= 0;
+            }
+                
+        }
+    </script>
+</body>
+</html>

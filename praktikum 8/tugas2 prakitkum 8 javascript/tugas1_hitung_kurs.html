@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 - Aplikasi Chat</title>
+</head>
+<body>
+    <fieldset style="background-color: cyan;">
+        <legend>Hitung kurs rupiah</legend>
+        <table>
+            <tr>
+                <th>Masukan Nilai</th>
+                <th>Mata Uang</th>
+                <th>Hasil Rupiah</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="nilai" onchange="kurs()"></td>
+                <td>
+                    <select id="jenis" onchange="kurs()">
+                        <option value="1">Dollar US</option>
+                        <option value="2">Dollar Singapore</option>
+                        <option value="3">Ringgit Malaysia</option>
+                        <option value="4">Yen Jepang</option>
+                        <option value="5">Euro</option>
+                        <option value="6">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input type="text" id="hasil"></td>
+            </tr>
+        </table>
+    </fieldset>
+    
+  
+</body>
+<script>
+    function kurs(){
+        if(jenis.value == 1){
+            let input = Number(document.getElementById("nilai").value);
+            let hitung = input * 9915;
+            document.getElementById("hasil").value = "Rp " +hitung
+            
+        }else if(jenis.value == 2){
+            let input = Number(document.getElementById("nilai").value);
+            let hitung = input * 13472;
+            document.getElementById("hasil").value = "Rp " +hitung
+        }else if(jenis.value == 3){
+            let input = Number(document.getElementById("nilai").value);
+            let hitung = input * 874;
+            document.getElementById("hasil").value = "Rp " +hitung
+        }else if(jenis.value == 4){
+            let input = Number(document.getElementById("nilai").value);
+            let hitung = input * 120;
+            document.getElementById("hasil").value = "Rp " +hitung
+        }else if(jenis.value == 5){
+            let input = Number(document.getElementById("nilai").value);
+            let hitung = input * 15888;
+            document.getElementById("hasil").value = "Rp " +hitung
+        }else if(jenis.value == 6){
+            let input = Number(document.getElementById("nilai").value);
+            let hitung = input * 3592;
+            document.getElementById("hasil").value = "Rp " +hitung
+        }else{
+            document.getElementById("hasil").value = 0;
+        }
+
+    }
+</script>
+</html>
