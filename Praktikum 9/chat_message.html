@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat message - Muhamad Zaki Raihan</title>
+</head>
+<body>
+   <textarea name="" id="chat" cols="50" rows="25"></textarea><br>
+
+
+   <input style="width: 30%;"  type="text" id="input">
+   <button onclick="kirim()">Kirim</button>
+
+  <script>
+    let message = [];
+    let chat = document.getElementById("chat");
+    let input = document.getElementById("input");
+    let end = 0;
+    function kirim(){
+      message.push(input.value)
+      for (let index = 0; index <= 1; index++) {
+         end += 1
+         document.getElementById("chat").innerHTML = message.join('\n'); 
+         input.value = '' 
+      }
+    }
+  </script>
+</body>
+</html>

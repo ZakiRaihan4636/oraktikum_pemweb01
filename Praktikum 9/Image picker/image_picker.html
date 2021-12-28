@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker - Muhamad Zaki Raihan</title>
+</head>
+<body>
+    <select name="pilih" id="pilih" onchange="ubahGambar()">
+    <option value="0">Pilih Gambar</option>
+    <option value="1">Gambar Gunung</option>
+    <option value="2">Gambar Mobil</option>
+    <option value="3">Gambar Motor</option>
+    <option value="4">Gambar Pinguin</option>
+    <option value="5">Gambar Burung</option>
+    <option value="6">Gambar Rumah</option>
+</select><br><br>
+
+<img src="" alt="" id="gambar">
+
+
+<script>
+
+    function ubahGambar(){
+        if(pilih.value == 1){
+            document.getElementById("gambar").src = "gunung.jpg";
+            window.alert("ini gambar Gunung");
+        }else if(pilih.value == 2){
+            document.getElementById("gambar").src = "mobil.jpg"
+            window.alert("ini gambar Mobil");
+        }else if(pilih.value == 3){
+            document.getElementById("gambar").src = "motor.png"
+            window.alert("ini gambar Motor");
+        }else if(pilih.value == 4){
+            document.getElementById("gambar").src = "pinguin.png"
+            window.alert("ini gambar pinguin");
+        }else if(pilih.value == 5){
+            document.getElementById("gambar").src = "burung.jpg"
+            window.alert("ini gambar burung");
+        }else if(pilih.value == 6){
+            document.getElementById("gambar").src = "rumah.png"
+            window.alert("ini gambar rumah");
+       
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>
